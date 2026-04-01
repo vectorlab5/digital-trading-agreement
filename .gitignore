@@ -21,3 +21,20 @@ PaperOutline.md
 library_summary.md
 literature_search_results.md
 library.bib
+
+# LaTeX / local tooling (keep out of this repo)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.spl
+submission.zip
+available_citations.txt
+used_citations.txt
+literature_search_results_citation_report.json
+clean_cites*.py
+generate_topic_projection.py
+generate_tsne.py
