@@ -1,0 +1,53 @@
+# Replication defaults — paths relative to repository root unless absolute.
+random_seed: 42
+
+paths:
+  d1_workbook: data/d1/DTA_Global_D1.xlsx
+  d2_workbook: data/d2/Ecom_Panel_D2.xlsx
+  d3_workbook: data/d3/OECD_AI_D3.xlsx
+  output_dir: experiments/last_run
+
+embedding:
+  max_features: 30000
+  ngram_min: 1
+  ngram_max: 2
+  svd_dim: 128
+  min_df: 2
+
+manifold:
+  # pca is the CPU-default; set to umap if umap-learn is installed.
+  backend: pca
+  umap_n_neighbors: 30
+  umap_min_dist: 0.08
+  umap_metric: cosine
+
+topics:
+  n_topics: 14
+  # kmeans is the default portable backend; hdbscan optional.
+  backend: kmeans
+  hdbscan_min_cluster_size: 40
+
+strictness:
+  w_m: 0.35
+  w_s: 0.28
+  w_e: 0.22
+  w_x: 0.15
+  ridge_alpha: 1.0
+
+transport:
+  # hadamard: omega ∝ mu ⊙ nu (fast, stable). sinkhorn: entropic OT on cost(centroids).
+  method: hadamard
+  sinkhorn_reg: 0.05
+  sinkhorn_iterations: 200
+
+panel:
+  entity: firm_id
+  time: year
+  dependent: log_compliance_cost
+  treatment_lag: omega_agsi_lag1
+  controls:
+    - log_total_assets
+    - leverage
+    - digital_intensity
+    - jurisdiction_innovation_index
+  cluster_entity: true

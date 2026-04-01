@@ -1,0 +1,9 @@
+{
+  "curated_utc": "2026-04-01",
+  "dataset": "D3_OECD_AI_benchmark",
+  "description": "Policy-instrument and strategy records aligned to OECD.AI public dashboards for the exogenous ν_Y baseline.",
+  "n_policy_rows": 670,
+  "n_countries_strategies": 39,
+  "notes": "Replication tables include timestamps, filters, and aggregates used for Gromov–Wasserstein alignment; not a redistribution of an official OECD bulk export. Primary policy facts remain attributable to OECD.AI public sources.",
+  "manuscript_use": "Exogenous thematic mass 2014–2021 for alignment with HST-AGSI topic bins (14 topic_id_hst rows in nu_Y_theme_aggregate)."
+}

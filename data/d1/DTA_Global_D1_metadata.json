@@ -1,0 +1,8 @@
+{
+  "curated_utc": "2026-04-01",
+  "description": "DTA-Global (D1): treaty catalogue, provision-level segmentation, and expert-annotated subset.",
+  "n_treaties": 84,
+  "n_provisions": 14200,
+  "n_expert_subset": 1500,
+  "notes": "treaty_catalog.official_text_url entries point to publisher-hosted full texts where applicable; clause text follows the preprocessing rules in the Methods section."
+}

@@ -1,0 +1,10 @@
+{
+  "curated_utc": "2026-04-01",
+  "dataset": "D2_Ecom_Panel",
+  "description": "De-identified firm–year panel for econometric validation.",
+  "n_firm_years": 3600,
+  "n_firms": 1200,
+  "n_jurisdictions": 22,
+  "years": [2022, 2023, 2024],
+  "manuscript_alignment": "Variables correspond to Eq. regression FE (dependent, Ω lag, controls) and App. variable table; two-way FE (μ_f, η_y) are estimated from firm_id and year."
+}

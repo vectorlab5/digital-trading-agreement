@@ -1,0 +1,23 @@
+# Environments & tooling
+.venv/
+__pycache__/
+*.pyc
+.experiments/
+experiments/
+*.egg-info/
+.pytest_cache/
+.DS_Store
+
+# Paper / manuscript materials (not part of the public code+data repo)
+*.tex
+*.pdf
+*.bib
+refs/
+example_papers/
+brain/
+figures/
+topic.md
+PaperOutline.md
+library_summary.md
+literature_search_results.md
+library.bib
